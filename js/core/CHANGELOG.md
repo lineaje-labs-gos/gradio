@@ -1,5 +1,17 @@
 # @gradio/core
 
+## 1.1.4
+
+### Fixes
+
+- [#12797](https://github.com/gradio-app/gradio/pull/12797) [`6a0c6ea`](https://github.com/gradio-app/gradio/commit/6a0c6eae53931ec137c0b8379428acc8a7ea27c9) - Refactor translation logic.  Thanks @hannahblair!
+
+### Dependency updates
+
+- @gradio/tabs@0.5.6
+- @gradio/utils@0.11.3
+- @gradio/video@0.20.3
+
 ## 1.1.3
 
 ### Fixes

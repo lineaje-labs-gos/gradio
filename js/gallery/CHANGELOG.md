@@ -1,5 +1,16 @@
 # @gradio/gallery
 
+## 0.17.1
+
+### Fixes
+
+- [#12866](https://github.com/gradio-app/gradio/pull/12866) [`9810396`](https://github.com/gradio-app/gradio/commit/981039647a4212c649a33dc4b56a4714980519eb) - Fix Gallery preview=True parameter not working on initial load.  Thanks @veeceey!
+
+### Dependency updates
+
+- @gradio/utils@0.11.3
+- @gradio/video@0.20.3
+
 ## 0.17.0
 
 ### Features

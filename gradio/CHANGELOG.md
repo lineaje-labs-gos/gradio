@@ -1,5 +1,14 @@
 # gradio
 
+## 6.5.2
+
+### Fixes
+
+- [#12797](https://github.com/gradio-app/gradio/pull/12797) [`6a0c6ea`](https://github.com/gradio-app/gradio/commit/6a0c6eae53931ec137c0b8379428acc8a7ea27c9) - Refactor translation logic.  Thanks @hannahblair!
+- [#12866](https://github.com/gradio-app/gradio/pull/12866) [`9810396`](https://github.com/gradio-app/gradio/commit/981039647a4212c649a33dc4b56a4714980519eb) - Fix Gallery preview=True parameter not working on initial load.  Thanks @veeceey!
+- [#12830](https://github.com/gradio-app/gradio/pull/12830) [`a2a0078`](https://github.com/gradio-app/gradio/commit/a2a0078de878481752b952f9ed0e759a0e884d0b) - `Video` to Svelte 5.  Thanks @dawoodkhan82!
+- [#12846](https://github.com/gradio-app/gradio/pull/12846) [`226daba`](https://github.com/gradio-app/gradio/commit/226daba5f65257244efc7c310500ea5366b20a87) - Fix bug where children of accordions dont get rendered when they are opened programmatically.  Thanks @freddyaboulton!
+
 ## 6.5.1
 
 ### Fixes
