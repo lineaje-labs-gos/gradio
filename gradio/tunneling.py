@@ -7,11 +7,12 @@ import stat
 import subprocess
 import sys
 import time
-import warnings
 from pathlib import Path
 from typing import List
 
 import httpx
+
+from gradio.exceptions import ChecksumMismatchError
 
 VERSION = "0.2"
 CURRENT_TUNNELS: List["Tunnel"] = []
@@ -81,9 +82,7 @@ class Tunnel:
                 calculated_hash = sha.hexdigest()
 
                 if calculated_hash != CHECKSUMS[BINARY_URL]:
-                    warnings.warn(
-                        f"Checksum of downloaded binary for creating share links does not match expected value. Please verify the integrity of the downloaded binary located at {BINARY_PATH}."
-                    )
+                       raise ChecksumMismatchError()
 
     def start_tunnel(self) -> str:
         self.download_binary()
