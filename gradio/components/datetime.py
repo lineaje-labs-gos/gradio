@@ -130,7 +130,8 @@ class DateTime(FormComponent):
         return "2020-10-01 05:20:15"
 
     def get_datetime_from_str(self, date: str) -> datetime:
-        now_regex = r"^(?:\s*now\s*(?:-\s*(\d+)\s*([dmhs]))?)?\s*$"
+        # CVE-2024-10624: Removed outer optional group to prevent catastrophic backtracking (ReDoS) caused by nested optional regex structure.
+        now_regex = r"^\s*now(?:\s*-\s*(\d+)\s*([dmhs]))?\s*$"
 
         if "now" in date:
             match = re.match(now_regex, date)
